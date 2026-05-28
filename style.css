@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* FULLSCREEN IMAGE */
+#photo {
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 1;
+  transition: opacity 1s ease;
+
+  display: none;
+}
+
+/* CLOCK */
+#clock {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+
+  z-index: 20;
+}
+
+/* NO SIGNAL TEXT */
+#noSignal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 10px;
+
+  display: none;
+
+  z-index: 20;
+}
